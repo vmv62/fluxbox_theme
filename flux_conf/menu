@@ -21,7 +21,9 @@
       	[exec] (⚫ Firefox) {firefox}
       	[exec] (⚫ Geany) {geany}
       	[exec] (⚫ Thunar) {thunar}
-     	[exec] (⚫ Xterm) {xterm -uc -b 30}
+#     	[exec] (⚫ Xterm) {xterm -uc -b 30}
+ 	    	[exec] (⚫ Xterm) {xterm}
+ 	    	[exec] (⚫ Bash) {x-terminal-emulator}
 #     	[exec] (⚫ Tilix) {tilix}
 #     	[exec] (⚫ Rstudio) {rstudio}
 #     	[exec] (⚫ Partition manager) {partitionmanager}
