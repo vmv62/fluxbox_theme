@@ -19,12 +19,8 @@
         [exec]   (➤ Run) {fbrun}
 	[separator]
       	[exec] (⚫ Firefox) {firefox}
-#		[exec] (⚫ Slack) {slack}
       	[exec] (⚫ Geany) {geany}
       	[exec] (⚫ Thunar) {thunar}
-#     	[exec] (⚫ Skype) {skypeforlinux}
-#     	[exec] (⚫ Spotify) {spotify --force-device-scale-factor=1.5 & kdocker -i ~/[Icons]/spotify3.png -n spotify -q &}
-#     	[exec] (⚫ Thunderbird) {thunderbird & kdocker -i ~/[Icons]/Antu_thunderbird.png -n Thunderbird -q &}
      	[exec] (⚫ Xterm) {xterm -uc -b 30}
 #     	[exec] (⚫ Tilix) {tilix}
 #     	[exec] (⚫ Rstudio) {rstudio}
@@ -33,11 +29,13 @@
 #     	[exec] (⚫ IntelliJ) {idea.sh}
      	[separator] 	
 	[submenu] (Fluxbox menu)
-		[nop] (Custom configs)
+		[separator]
+		[nop] (Быстрые настройки)
 		[exec] (menu) { ~/.fluxbox/menu}
 		[exec] (keys) {geany ~/.fluxbox/keys}
 		[exec] (init) {geany ~/.fluxbox/init}
 		[exec] (startup) {geany ~/.fluxbox/startup}
+		[separator]
       	[config] (Configure)
 		[submenu] (System Styles) {Choose a style...}
       			[stylesdir] (/usr/share/fluxbox/styles)
