@@ -1,0 +1,102 @@
+# This is an automatically generated file.
+# Please see <file:/usr/share/doc/menu/README> for information.
+
+# to use your own menu, copy this to ~/.fluxbox/menu, then edit
+# ~/.fluxbox/init and change the session.menuFile path to ~/.fluxbox/menu
+
+[begin] (Fluxbox)
+
+# Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)
+
+	[exec] (Bash) { x-terminal-emulator -T "Bash" -e /bin/bash --login} <>
+	[exec] (Firefox) { firefox }
+	[exec] (VLC Player) { vlc }
+	[exec] (Thunar) { thunar }
+	[exec] (Kicad){ kicad }
+	[exec] (Office){ libreoffice }
+	[separator]
+   [submenu] (Приложения) {}
+      [submenu] (Графика) {}
+         [exec] (The GIMP) {/usr/bin/gimp} </usr/share/pixmaps/gimp.xpm>
+         [exec] (X Window Snapshot) {xwd | xwud} <>
+      [end]
+      [submenu] (Научные) {}
+         [submenu] (Математика) {}
+            [exec] (Xcalc) {xcalc} <>
+         [end]
+      [end]
+      [submenu] (Оболочки) {}
+         [exec] (Bash) { x-terminal-emulator -T "Bash" -e /bin/bash --login} <>
+         [exec] (Dash) { x-terminal-emulator -T "Dash" -e /bin/dash -i} <>
+         [exec] (Sh) { x-terminal-emulator -T "Sh" -e /bin/sh --login} <>
+      [end]
+      [submenu] (Офисные) {}
+         [exec] (GoldenDict) {/usr/bin/goldendict} </usr/share/pixmaps/goldendict.png>
+      [end]
+      [submenu] (Программы просмотра) {}
+         [exec] (Xditview) {xditview} <>
+      [end]
+      [submenu] (Работа со звуком) {}
+         [exec] (pavucontrol) {/usr/bin/pavucontrol} <>
+      [end]
+      [submenu] (Работа с текстом) {}
+         [exec] (Fortune) {sh -c 'while /usr/games/fortune | col -x | xmessage -center -buttons OK:1,Another:0 -default OK -file - ; do :; done'} <>
+         [exec] (hspell-gui) {/usr/bin/hspell-gui} <>
+         [exec] (hspell-gui (Hebrew UI\)) {/usr/bin/hspell-gui-heb} <>
+         [exec] (kasumi) {/usr/bin/kasumi} <>
+         [exec] (Khmer Converter) {/usr/bin/khmerconverter} </usr/share/pixmaps/khmerconverter.xpm>
+      [end]
+      [submenu] (Сеть) {}
+         [submenu] (Общение) {}
+            [exec] (Xbiff) {xbiff} <>
+         [end]
+      [end]
+      [submenu] (Системные) {}
+         [submenu] (Администрирование) {}
+            [exec] (Debian Task selector) { x-terminal-emulator -T "Debian Task selector" -e su-to-root -c tasksel} <>
+            [exec] (Editres) {editres} <>
+            [exec] (GNOME partition editor) {su-to-root -X -c /usr/sbin/gparted} </usr/share/pixmaps/gparted.xpm>
+            [exec] (Xclipboard) {xclipboard} <>
+            [exec] (Xfce Application Finder) {xfce4-appfinder} </usr/share/pixmaps/xfce4-appfinder.xpm>
+            [exec] (Xfontsel) {xfontsel} <>
+            [exec] (Xkill) {xkill} <>
+            [exec] (Xrefresh) {xrefresh} <>
+            [exec] (xxkb) {/usr/bin/xxkb} <>
+         [end]
+         [submenu] (Мониторинг) {}
+            [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+            [exec] (Xconsole) {xconsole -file /dev/xconsole} <>
+            [exec] (Xev) {x-terminal-emulator -e xev} <>
+            [exec] (Xload) {xload} <>
+         [end]
+         [submenu] (Управление пакетами) {}
+            [exec] (Synaptic Package Manager) {x-terminal-emulator -e synaptic-pkexec} </usr/share/synaptic/pixmaps/synaptic_32x32.xpm>
+         [end]
+      [end]
+      [submenu] (Специальные возможности) {}
+         [exec] (Xmag) {xmag} <>
+      [end]
+      [submenu] (Управление файлами) {}
+         [exec] (Xarchiver) {/usr/bin/xarchiver} </usr/share/pixmaps/xarchiver.xpm>
+         [exec] (Xfdesktop) {xfdesktop} <>
+      [end]
+      [submenu] (Эмуляторы) {}
+         [exec] (VirtualBox) {/usr/bin/virtualbox} </usr/share/pixmaps/virtualbox.xpm>
+      [end]
+      [submenu] (Эмуляторы терминалов) {}
+         [exec] (Multilingual Terminal (client\)) {/usr/bin/mlclient} </usr/share/pixmaps/mlterm-icon-24colors-1.xpm>
+         [exec] (Multilingual Terminal (daemon\)) {/usr/bin/mlterm -j=genuine} </usr/share/pixmaps/mlterm-icon-24colors-1.xpm>
+         [exec] (Multilingual Terminal (normal\)) {/usr/bin/mlterm} </usr/share/pixmaps/mlterm-icon-24colors-1.xpm>
+         [exec] (xiterm+thai) {/usr/bin/txiterm -ls} <>
+      [end]
+   [end]
+
+   [config] (Configuration)
+
+	[separator]
+   [reconfig] (Reconfigure)
+   [restart] (Restart)
+	[exec] (Shutdown) { shutdown -h now }
+   [exit] (Exit)
+
+[end]
